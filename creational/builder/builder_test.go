@@ -30,7 +30,6 @@ func TestBuilderPattern(t *testing.T) {
 	manufacturingComplex.Construct()
 
 	motorbike := bikeBuilder.Build()
-	motorbike.Seats = 3
 
 	if motorbike.Wheels != 2 {
 		t.Errorf("Wheels on a motorbike must be 2 and they were %d\n", motorbike.Wheels)
